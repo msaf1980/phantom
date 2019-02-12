@@ -140,6 +140,7 @@ public:
 
 template<typename x_t>
 class ctor_base_t : public named_list_item_t<ctor_base_t<x_t>> {
+	friend class named_list_item_t<ctor_base_t<x_t>>;
 	using named_list_item_t<ctor_base_t<x_t>>::list;
 	using named_list_item_t<ctor_base_t<x_t>>::next;
 

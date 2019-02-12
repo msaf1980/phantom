@@ -18,6 +18,7 @@ class enum_t {
 	val_t val;
 public:
 	class item_t : public named_list_item_t<item_t> {
+		friend class named_list_item_t<item_t>;
 		using named_list_item_t<item_t>::next;
 		using named_list_item_t<item_t>::name;
 
